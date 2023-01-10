@@ -1,0 +1,78 @@
+body{
+}
+
+table{
+    border: 1px;
+    border-style: groove;
+
+}
+
+h2{
+    color:red;
+}
+
+th{
+    padding: 10px;
+    color:rgb(235, 138, 138);
+    background-color: rgba(110, 100, 82, 0.432);
+    font-family: Cochin, Georgia;
+
+}
+
+td{
+    padding:5px;
+    text-align: center;
+    border-bottom: 1px solid olive;
+    border-right: 1px solid olive;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+tr:nth-child(even){
+    background-color: rgba(68, 110, 110, 0.281);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(140, 156, 139, 0);
+}
+
+/* this whill style all the p tags that are in the div */
+
+ /* div p{
+    color: red;
+}  */
+
+/* this will style only the p tags that are siblings of div */
+div>p{
+    color:red;
+}
+
+/* .green-square{
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    padding: 100px;
+    margin: 10px;
+} */
+
+.red,.yellow,.green{
+    height: 100px;
+    width: 80px;
+    margin-right:1px ;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.red{
+    background-color: red;
+}
+
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}

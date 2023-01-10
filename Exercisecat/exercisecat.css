@@ -1,0 +1,36 @@
+img{
+    height: 400px;
+   width: 100%;
+}
+
+ol{
+    list-style-type: upper-latin;
+}
+table{
+    margin: 0 auto;
+}
+
+ th,td{
+    border: 1px solid black;
+  }
+
+  td{
+    padding: 15px;
+
+  }
+
+th{
+    border-bottom: 2px solid;
+    
+}
+
+ul>li{
+    margin-left: 100px;
+}
+
+#difference{
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Avenger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 100%;
+    postion: relative;
+}
+
+h1.nav-header {
+    margin-left: 20px;
+    font-family: 'Splash', cursive;
+    font-size: 30px;
+}
+
+ul li {
+    display: inline-flex;
+    margin-right: 40px;
+    align-content: flex-end;
+}
+
+h1{
+    font-size: 80px;
+    margin: bottom 10px;;
+}
+p{
+    width: 40%;
+    font-size: 18px;
+    margin-right:2px;
+}
+div {
+    margin-top: 25%;
+    margin-left: 100px;
+    width: 80%;
+    
+    
+}

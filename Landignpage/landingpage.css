@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    margin-left: 50px;
+}
+
+#sign-in,
+#sign-up {
+    width: 90px;
+    height: 35px;
+    margin-right: 25px;
+    background-color: rgb(0, 17, 255);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    height: 50px;
+}
+
+div.wrapper {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.up {
+    height: 40rem;
+    width: 100%;
+    background-image: url(sea3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.search {
+    padding-left: 8px;
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+
+#inside-up {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+#txt {
+    width: 70%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#field {
+}
+
+div.down {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #f9f9f9;
+
+}
+
+img{
+    height: 70px;
+    margin-bottom: 0;
+}
+
+.feature{
+    margin: 60px 10px;
+    text-align: center;
+}
+
+.material-symbols-outlined{
+    text-align: center;
+    height: px;
+    width: 30px;
+}
+
+.subtext{
+    font-size: 12px;
+    color:gray
+}
+
+.ft{
+    font-weight: bold;
+}

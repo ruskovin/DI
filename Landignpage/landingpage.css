@@ -53,7 +53,7 @@ div.up {
 .search {
     padding-left: 8px;
     width: 250px;
-    height: 30px;
+    height: 100%;
     border-radius: 3px;
     border-style: none;
 }
@@ -69,7 +69,8 @@ div.up {
 }
 
 #txt {
-    width: 70%;
+    width: 70vw;
+    text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
     color: white;
@@ -110,4 +111,37 @@ img{
 
 .ft{
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    img{
+        height: 50px;
+        margin:0;
+    }
+    
+}
+
+@media  screen and (max-width: 480px) {
+    body{
+        margin:0;
+    }
+    div.down{
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+    }
+    div.up{
+        width: 100%;
+    }
+
+    .search{
+        width: 250px;
+        height: 7vh;
+        display: block;
+        margin-bottom:5px;
+    }
+    div.field{
+        display: flex;
+        justify-content: center
+    }
 }

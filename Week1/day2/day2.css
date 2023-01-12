@@ -1,0 +1,25 @@
+.main{
+
+    background-color: gray;
+    width: 400px;
+    height: 500px;
+}
+
+.one{
+    background-color: aquamarine;
+    height: 200px;
+    width: 100px;
+    position: relative;
+    top:12px;
+}
+
+.one:hover{
+    background-color: blue;
+    transition: 3s  ;
+}
+
+.two{
+    background-color:yellow;
+    height: 200px;
+    width: 100px;
+}

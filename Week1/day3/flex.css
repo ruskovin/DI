@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    color: white;
+}
+
+.div1, .div2, .div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1{
+    background-color:rgb(18, 135, 173);
+    width: 70px;
+    height: 40px;
+
+}
+.div2{
+    background-color:lightblue;
+    width: 400px;
+    height: 40px;
+}
+.div3{
+    background-color:rgb(216, 113, 113);
+    width: 400px;
+    height: 40px;
+}

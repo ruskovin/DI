@@ -50,7 +50,7 @@ div.up {
 }
 
 
-.search {
+.email{
     padding-left: 8px;
     width: 250px;
     height: 100%;
@@ -58,6 +58,9 @@ div.up {
     border-style: none;
 }
 
+.email:focus{
+    outline: none;
+}
 
 #inside-up {
     width: 600px;

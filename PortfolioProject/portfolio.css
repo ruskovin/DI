@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow:auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+ header{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    align-items: center;
+    opacity: .9;
+}
+
+.banner-content{
+    height:100vh;
+    width: 100%;
+    /* background-image:  linear-gradient(to top, rgba(255, 255, 255, 0.664), rgba(255, 255, 255, 0.568)),url(/PortfolioProject/portfolio_setup/images/headerback.jpg); */
+    background-image: url(/PortfolioProject/portfolio_setup/images/headerback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+}
+
+.banner-content::after{
+     content: '';
+     position: absolute;
+     z-index: -1;
+     inset: 0;
+     background: white;
+     opacity: .5;
+}
+
+.inside-banner-content{
+    position:relative;
+    left: 100px;
+    width: 600px;
+}
+.inside-banner-content h2{
+    color:orange
+}
+
+.btn-seemore{
+    background-color: orange;
+}
+
+/* end of design of up section */
+
+/* debut of design of the down section */
+.container-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* about me section debut  */
+.about-me{
+    height: 400px;
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.about-image{
+    border-radius: 100%;
+}
+.text{
+    padding: 20px;
+    border-left: 2px solid aqua;
+    margin-left: 5px;
+}
+
+/* about me section end */
+
+/* portfolio section debut */
+
+.portfolio{
+    display: grid;
+    height: 400px;
+    width: 800px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 12px 12px;
+}
+
+.im1{
+    background-image: url("/PortfolioProject/portfolio_setup/images/portfolio/port8.png");
+    background-size: cover;
+}
+.im2{
+    background-image: url("/PortfolioProject/portfolio_setup/images/portfolio/port13.png");
+    background-size: cover;
+}   
+.im3{
+    background-image: url("/PortfolioProject/portfolio_setup/images/portfolio/port11.png");
+    background-size: cover;
+}
+.im4{
+    background-image: url("/PortfolioProject/portfolio_setup/images/portfolio/port3.png");
+    background-size: cover;
+}
+.im5{
+    background-image: url("/PortfolioProject/portfolio_setup/images/portfolio/port6.png");
+    background-size: cover;
+}
+.im6{
+    background-image: url("/PortfolioProject/portfolio_setup/images/portfolio/port1.png");
+    background-size: cover;
+}
+
+.item:hover{
+    transform: scale(1.5, 1.5);
+    transition:.3s linear;
+}
+
+/* end of portfolio section */
+
+/* debut of Blog section */
+.blog{
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+}
+.card-img-top{
+    height: 250px;
+}
+.read-more:hover{
+    background-color: #0275d8;
+    color: white;
+    transition: .1s linear;
+}
+/* end of Blog section */
+
+/* debut of team section */
+.team{
+    width: 65vw;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+figure{
+    width: 20%;
+    height: 100px;
+}
+.figure-img{
+    height: 100px;
+}
+.name{
+    height: 5px;
+    width: 100px;
+   background-color: orange;
+    margin: 0;
+
+}
+/* end of team section */
+
+/* debut of contact section */
+.contact{
+    display: flex;
+    width: 65vw;
+    height: 400px;
+}
+
+
+
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left a{
+    color:orange;
+}
+.right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.input, input, form{
+    width: 100%;
+}
+/* end of contact section */
+

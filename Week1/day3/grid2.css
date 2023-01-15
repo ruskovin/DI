@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    overflow: auto;
+}
+
+.main{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 
+    "a a a a a a"
+    "b b c c d d"
+    "b b e e e e"
+    "f f f f g g"
+    "h h h h h h";
+    gap: 5px 5px;
+}
+#one,#two,#three,#four,#five,#six,#seven,#eight{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+#one{
+background-color: red ;
+grid-area: a;
+}
+#two{
+    background-color:blue ;
+    grid-area:b ;
+}
+#three{
+    background-color:lightblue ;
+    grid-area:c ;
+
+}
+#four{
+    background-color:skyblue ;
+    grid-area:d ;
+}
+#five{
+    background-color:violet ;
+    grid-area:e ;
+}
+#six{
+    background-color:red;
+    grid-area:f ;
+}
+#seven{
+    background-color:blue ;
+    grid-area:g ;
+}
+#eight{
+    background-color:lightblue ;
+    grid-area:h ;
+}

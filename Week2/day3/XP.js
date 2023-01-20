@@ -1,61 +1,61 @@
-const people = ["Greg", "Mary", "Devon", "James"];
+// const people = ["Greg", "Mary", "Devon", "James"];
 
-// 1
+// // 1
 
-people.splice(0,1)
+// people.splice(0,1)
 
-console.log(people)
+// console.log(people)
 
-//2
+// //2
 
-people.splice(2,1,"Jason")
-console.log(people)
+// people.splice(2,1,"Jason")
+// console.log(people)
 
-//3
+// //3
 
-people.push("Paul")
-console.log(people)
+// people.push("Paul")
+// console.log(people)
 
-//4
+// //4
 
-console.log(people.indexOf('Mary'))
+// console.log(people.indexOf('Mary'))
 
-//5
-const peopleNew = people.slice(1,-1)
-console.log(peopleNew)
+// //5
+// const peopleNew = people.slice(1,-1)
+// console.log(peopleNew)
 
-//6
+// //6
 
-console.log(people.indexOf('foo'))
+// console.log(people.indexOf('foo'))
 
-//7
-let last = peopleNew[(peopleNew.length - 1)]
-console.log(last)
+// //7
+// let last = peopleNew[(peopleNew.length - 1)]
+// console.log(last)
 
 
-// Part II : loops
+// // Part II : loops
  
-// 1
-people.forEach(i => {
-    console.log(i)
-});
+// // 1
+// people.forEach(i => {
+//     console.log(i)
+// });
 
-// 2
-console.log("*************")
-for (let x in people) {
-    if (people[x]==="Jason") {
-        break;
-    }
-    console.log(people[x])
-}
+// // 2
+// console.log("*************")
+// for (let x in people) {
+//     if (people[x]==="Jason") {
+//         break;
+//     }
+//     console.log(people[x])
+// }
 
 
 //Exercice 2 : Your favorite colors
 
 // 1
 
-let colors = ["blue", "green","white", "yellow","black"];
-let suffixes =['st', 'nd','rd','th']
+// let colors = ["blue", "green","white", "yellow","black"];
+// let suffixes =['st', 'nd','rd','th']
 
 // for(let color in colors){
 //     console.log("My #"+color + " choice is "+colors[color] ) 
@@ -105,34 +105,84 @@ let suffixes =['st', 'nd','rd','th']
 
 // Exercise 4
 
-const building = {
-    numberOfFloors: 4,
-    numberOfAptByFloor: {
-        firstFloor: 3,
-        secondFloor: 4,
-        thirdFloor: 9,
-        fourthFloor: 2,
-    },
-    nameOfTenants: ["Sarah", "Dan", "David"],
-    numberOfRoomsAndRent:  {
-        sarah: [3, 990],
-        dan:  [4, 1000],
-        david: [1, 500],
-    },
-}
+// const building = {
+//     numberOfFloors: 4,
+//     numberOfAptByFloor: {
+//         firstFloor: 3,
+//         secondFloor: 4,
+//         thirdFloor: 9,
+//         fourthFloor: 2,
+//     },
+//     nameOfTenants: ["Sarah", "Dan", "David"],
+//     numberOfRoomsAndRent:  {
+//         sarah: [3, 990],
+//         dan:  [4, 1000],
+//         david: [1, 500],
+//     },
+// }
 
-console.log(building['numberOfFloors'])
+// console.log(building['numberOfFloors'])
 
-console.log(`There are ${building['numberOfAptByFloor'].firstFloor} floors in the first appart and ${building['numberOfAptByFloor'].thirdFloor} in the third appart `)
+// console.log(`There are ${building['numberOfAptByFloor'].firstFloor} floors in the first appart and ${building['numberOfAptByFloor'].thirdFloor} in the third appart `)
 
-console.log(` The name of the second tenant is ${building['nameOfTenants'][1]} and he has ${building['numberOfRoomsAndRent']['dan'][0]} rooms in his appartment`)
+// console.log(` The name of the second tenant is ${building['nameOfTenants'][1]} and he has ${building['numberOfRoomsAndRent']['dan'][0]} rooms in his appartment`)
 
-let sarahRent = building['numberOfRoomsAndRent']['sarah'][1]
-let davidRent = building['numberOfRoomsAndRent']['david'][1]
-let danRent = building['numberOfRoomsAndRent']['dan'][1]
+// let sarahRent = building['numberOfRoomsAndRent']['sarah'][1]
+// let davidRent = building['numberOfRoomsAndRent']['david'][1]
+// let danRent = building['numberOfRoomsAndRent']['dan'][1]
 
-if ((sarahRent + davidRent)> danRent){
-    danRent += 200
-}
+// if ((sarahRent + davidRent)> danRent){
+//     danRent += 200
+// }
 
-console.log(danRent)
+// console.log(danRent)
+
+
+// Exercise 5
+
+// let family ={
+//     'dad': 'barbapapa',
+//     'mum': 'barbamama',
+//     'sister' : 'barbasister',
+//     'brother':'barbabrother'
+// }
+
+// for (let member in family){
+//     console.log(member)
+// }
+
+// for (let member in family){
+//     console.log(family[member])
+// }
+
+
+// Exercise 6
+
+
+// const details = {
+//     my: 'name',
+//     is: 'Rudolf',
+//     the: 'raindeer'
+//   }
+
+//   let text = "";
+//   for (x in details){
+//     text += (`${x} ${details[x]} `)
+//   }
+
+//   console.log(text)
+
+
+// Exercise 7
+
+// const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+
+// names.sort()
+
+// let societyName ="";
+
+// for (let name in names){
+//     societyName += names[name][0]
+// }
+
+// console.log(societyName)

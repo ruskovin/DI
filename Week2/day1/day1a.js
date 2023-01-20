@@ -15,12 +15,3 @@ console.log(pets);
 
 let isBoss = confirm("Are you the boss?");
 alert(isBoss)
-
-
-let sentence = ["my","favorite","color","is","blue"];
-
-let joined_sentence = sentence.join(" ")
-console.log(joined_sentence)
-
-let str1 = "mix";
-let str2 = "pod";

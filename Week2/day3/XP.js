@@ -7,8 +7,8 @@
 // console.log(people)
 
 // //2
-
-// people.splice(2,1,"Jason")
+// let index_James = people.indexOf("James");
+// people.splice(index_James,1,"Jason")
 // console.log(people)
 
 // //3

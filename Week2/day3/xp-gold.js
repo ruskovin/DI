@@ -32,32 +32,52 @@
 
 //Exercise 3 : Playing with numbers
 
-let ages = [20,5,12,43,9998,55];
+let ages = [20,1, 114,310,43,55];
 
-let sumAges = 0;
 
-for (let age in ages){
-    sumAges += ages[age]
-}
 
-// for( let i=0 ; i <= (ages.length)-1; i++ ){
-//     sumAges += ages[i];
+// let sumAges = 0;
+
+// for (let age in ages){
+    //     sumAges += ages[age]
+    // }
+    
+    // for( let i=0 ; i <= (ages.length)-1; i++ ){
+        //     sumAges += ages[i];
+        // }
+        // console.log(sumAges);
+
+
+
+        // ALGORITHMS TO FIND THE GREATEST NUMBER OF AN ARRAY
+
+        // ALGO I
+// let greatest = ages[0];
+// let gh = 0;
+
+// for(let i of ages){
+//     if(i > gh ){
+    //         gh = i;
+//     }
 // }
-console.log(sumAges);
-let greatest = ages[0];
-let gh = 0;
+// console.log(gh)
 
-for(let i of ages){
-    if(i > gh ){
-        gh = i;
-    }
-}
-console.log(gh)
+                // ALGO II
 
-for (let i =1; i<= (ages.length); i++){
-    if( ages[i]>greatest){
-        greatest = ages[i];
-    }
-}
+// for (let i =1; i<= (ages.length); i++){
+//     if( ages[i]>greatest){
+//         greatest = ages[i];
+//     }
+// }
 
+    // ALGO III
+
+// let greatest =0;                
+// for (let i =0; i<= (ages.length); i++){
+//     if( ages[i+1]>ages[i]){
+//         if(ages[i+1]>greatest){
+//             greatest = ages[i+1];
+//         }
+//     }
+// }
 console.log(greatest);

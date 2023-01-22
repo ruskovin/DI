@@ -1,0 +1,22 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    padding: 50px
+}
+
+button{
+    background-color: rgba(100, 90, 31, 0.596);
+    border-style: none;
+    height: 100px;
+    width: 300px;
+    color: rgba(221, 203, 203, 0.89);
+    font-size: 21px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 12px 11px;
+}

@@ -1,18 +1,19 @@
 let user_input;
 let computerNumber;
+
 function playTheGame() {
 
     let ask = confirm("Would you like to play the game?");
 
     let guesses = 0;
-
+    let chances = 3;
     computerNumber = Math.round((Math.random() * 10));
 
     if (ask === false) {
         alert("No problem, Goodbye");
         return;
     }
-
+    console.log(` You have ${chances} chances`)
     while (user_input != computerNumber) {
         if (guesses === 3) {
             alert("OUT OF CHANCES");
@@ -29,6 +30,7 @@ function playTheGame() {
         }
         compareNumbers(user_input, computerNumber);
         guesses++;
+        console.log(` You have ${chances - guesses} chance(s) left`);
     }
 
 }

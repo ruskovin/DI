@@ -1,0 +1,29 @@
+<html>
+<body> 
+    <p>
+        <a id="dI" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://developers.institute/">Developers Institute</a>
+    </p> 
+
+    <script>
+        let d = ['href', 'hreflang', 'rel', 'target','type']
+        let a = document.getElementById('dI')
+        let href = a.href
+        let hreflang = a.hreflang
+        let rel = a.rel
+        let target = a.target
+        let type = a.type
+
+        console.log(href, hreflang, rel, target, type)
+        console.log(a.getAttribute('href'))
+        for(let at of d){
+            console.log(a.getAttribute(at))
+        }
+
+        // for (let att of dI.attributes){
+        //     if (att.name == 'target' || att.name=='rel' || att.name=='hreflang' || att.type == 'type' || att.name =='href'){
+        //         alert(att.name +' = ' +att.value)
+        //     }
+        // }
+    </script>
+</body>
+</html> 

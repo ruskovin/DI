@@ -41,5 +41,23 @@
 
 
 //Exercise 3 Find the numbers divisible by 23
+// let sum_of =0;
+// function isDivisible(){
+//     for (let i=0; i<=500; i++){
+//         if (i%23 ===0){
+//             console.log(i)
+//             sum_of += i 
+//         }
+//     }
+// }
+// function isDivisibleBy(divisor){
+//     for (let i=0; i<=500; i++){
+//         if (i%divisor ===0){
+//             console.log(i)
+//             sum_of += i 
+//         }
+//     }
+// }
 
-function isDivisible()
+// isDivisibleBy(12)
+// console.log(`the sum of these numbers is ${sum_of}`)

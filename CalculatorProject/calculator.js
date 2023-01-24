@@ -1,18 +1,19 @@
 let calc = '';
 function number(num){
-    calc += num
+    calc = calc + num
     console.log(calc)
 }
 
 function operator(operator){
    calc += operator
-    console.log(calc)
+    console.log(calc) 
 }
+
 
 function equal(){
     calc = eval(calc)
     alert(calc)
-    calc = 0;
+    calc = '';
     return
 }
 

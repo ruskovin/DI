@@ -71,3 +71,29 @@ let allBooks =[
         "alreadyRead":false
     }
 ]
+
+let table = document.createElement('table')
+let div = document.getElementsByClassName("listBooks")[0]
+div.appendChild(table)
+let headers = ["title", "author", "image"]
+
+
+for (let h of headers){
+    let tableheaders = document.createElement('th')
+    tableheaders.innerHTML = h
+table.appendChild(tableheaders)
+}
+
+for (let title in allBooks){
+    let row = document.createElement('tr')
+    let  tabledata1 = document.createElement('td')
+    let  tabledata2 = document.createElement('td')
+    let  tabledata3 = document.createElement('td')
+    tabledata1.innerHTML = allBooks[title].title
+    tabledata2.innerHTML = allBooks[title].author
+    tabledata3.innerHTML = allBooks[title].image
+    row.appendChild(tabledata1)
+    row.appendChild(tabledata2)
+    row.appendChild(tabledata3)
+    table.appendChild(row)
+}

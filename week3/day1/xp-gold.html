@@ -52,16 +52,13 @@
   </table>
   <script>
     let table = document.body.firstElementChild;
-    let tr = document.getElementsByTagName('tr')
-    let td = document.getElementsByTagName('td')
-    let trChild = tr[0].children
-    for(let i in tr){
-        for (let j in trChild){
-            if(i === j ){
-                td[j].style.backgroundColor = "red"
-            }
-        }
+    console.log(table.rows)
+    console.log(table.rows[1].cells)
+   
+    for (let i = 0; i < table.rows.length; i++) {
+      let row = table.rows[i];
+      row.cells[i].style.backgroundColor = 'red';
     }
-  </script>
+      </script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+#barcode{
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(0, 0, 0);
+    height: 60px;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+
+}
+
+a{
+    text-decoration:none;
+    color: green;
+}
+.nav img{
+    height: 40px;
+    width: 40px;
+}
+body{
+    margin: 0%;
+    background-image: linear-gradient(to right bottom, white,darkblue);
+    background-size: cover;
+}
+h1{
+   font-size: 70px; 
+}
+.trade{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin-left: 100px;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.card{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 1000;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 20px;
+
+}

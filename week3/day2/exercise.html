@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner exercise</title>
+
+    <style>
+        div{
+            background-color: blueviolet;
+            color:white;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+<!-- javascript -->
+    <script>
+const body = document.body
+let min = 10;
+// function bannerAdd(){
+    let banner = document.createElement('div')
+    let h1 = document.createElement('h1')
+    h1.innerHTML = `The sales end in ${min} min!`
+    banner.appendChild(h1)
+    body.appendChild(banner)
+// }
+// bannerAdd()
+
+let start = Date.now()
+
+let id =setInterval(function(){
+    let timepassed =Math.floor((Date.now() - start)/1000)
+    console.log(timepassed)
+    h1.innerHTML = `The sales end in ${10- timepassed} Secs!`
+    if(timepassed === 10){
+        h1.innerHTML ="SALES ENDED";
+        clearInterval(id)
+    }
+}, 1000)
+
+    </script>
+</body>
+
+</html>

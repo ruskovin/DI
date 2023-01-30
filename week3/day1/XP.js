@@ -71,29 +71,18 @@ let allBooks =[
         "alreadyRead":false
     }
 ]
-
+const body = document.body
 let table = document.createElement('table')
 let div = document.getElementsByClassName("listBooks")[0]
 div.appendChild(table)
-let headers = ["title", "author", "image"]
-
-
-for (let h of headers){
-    let tableheaders = document.createElement('th')
-    tableheaders.innerHTML = h
-table.appendChild(tableheaders)
-}
-
-for (let title in allBooks){
-    let row = document.createElement('tr')
-    let  tabledata1 = document.createElement('td')
-    let  tabledata2 = document.createElement('td')
-    let  tabledata3 = document.createElement('td')
-    tabledata1.innerHTML = allBooks[title].title
-    tabledata2.innerHTML = allBooks[title].author
-    tabledata3.innerHTML = allBooks[title].image
-    row.appendChild(tabledata1)
-    row.appendChild(tabledata2)
-    row.appendChild(tabledata3)
-    table.appendChild(row)
-}
+let book1 = document.createElement('tr')
+book1.append(document.createElement('td').innerHTML = allBooks[0].title+" written by "+allBooks[0].author)
+book1.append(document.createElement('td').innerHTML = allBooks[0].image)
+book1.style.margin = '25px'
+table.append(book1)
+let book2 = document.createElement('tr')
+book2.append(document.createElement('td').innerHTML = allBooks[1].title +" written by "+allBooks[1].author)
+book2.append(document.createElement('td').innerHTML = allBooks[1].image)
+table.append(book2)
+body.append(table)
+table.rows.style.border = 'solid 1px red'

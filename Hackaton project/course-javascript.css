@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Splash&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100%;
+    background-image: linear-gradient(to right bottom,rgb(218, 225, 245) ,darkblue);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Comic Neue';
+    font-size: 2rem;
+}
+h1{
+    font-size: 60px;
+}
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+

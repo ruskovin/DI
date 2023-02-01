@@ -1,3 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "c:\\Users\\USER\\Desktop\\Developers Institute\\DI\\Week2\\day1\\day1.html"
+    "livePreview.defaultPreviewPath": "c:\\Users\\USER\\Desktop\\Developers Institute\\DI\\Week2\\day1\\day1.html",
+    "python.formatting.provider": "yapf",
+    "python.analysis.typeCheckingMode": "basic"
 }

@@ -29,20 +29,15 @@
 
 # exercise 5 : Longest sentence without the letter 'a'
 
-sentence= input("enter your sentence please")
-sentence_lgh = len(sentence)
-longest = ""
-longest_lgh = len(longest)
-while True:
-    sentence = input("enter a sentence without the letter a  ")
-    if "a" not in sentence and sentence_lgh>longest_lgh:
+sentence = input("enter a sentence without the letter a  ")
+longest = ''
+
+for i in range(20):
+    if 'a' in sentence:
+        print("there's an a in the sentence try again")
+    if not 'a' in sentence and (len(sentence) > len(longest) or len(sentence) == len(longest)) :
+        print("Congratulations this word is the longest without an 'a'")
         longest = sentence[:]
-        print('Wow this is the longest')
-        sentence= input('enter a sentence')
-    elif "a" not in sentence and sentence_lgh< longest_lgh:
-        print("yes i'ts ok. keep continue")
-        sentence = input("enter a sentence")
-    elif 'a' in sentence :
-        print("there's an a in the sentence")
-    if sentence== 'q':
-            break
+    if (not 'a' in sentence) and len(sentence) < len(longest):
+        print("that's good , continue")
+    sentence = input("enter a sentence without the letter a  ")

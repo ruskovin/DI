@@ -1,11 +1,9 @@
+my_dict ={}
 word = input("Please enter a word")
 
-keys=[letter for letter in word]
+for idx,letter in enumerate(word):
+    if letter not in my_dict.keys():
+        my_dict[letter] = []
+    my_dict[letter].append(idx)
 
-word_with_indexes = ()
-
-values = []
-
-for letter in enumerate(word):
-    
-print(word_with_indexes)
+print(my_dict)

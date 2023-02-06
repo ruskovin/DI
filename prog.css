@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Raleway:ital,wght@1,200&family=Roboto:wght@100&family=Work+Sans:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Work Sans',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#barcode{
+    display:flex;
+    justify-content:space-between;
+    background-image: linear-gradient(to left top,#f4a261,#ffc52d);
+    height: 70px;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+
+    color:white;
+    margin-top: 0;
+    margin-bottom:100px;
+}
+
+h4{
+    text-align: center;
+    font-size: 22px;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+
+}
+
+.navlist a{
+    font-size: 20px;
+    text-decoration:none;
+    color: black;;
+}
+
+.navlist a:hover{
+    opacity: .7;
+}
+
+.body{
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+    
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin: 10px 15px;
+    border-radius:6px;
+    box-shadow: 4px 4px rgba(59, 54, 54, 0.446);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a h4{
+    color:white;
+}
+
+.wrapper a{
+    width: 33%;
+    margin: 15px 0;
+}
+
+
+.card:hover{
+    transform: scale(1.1, 1.1);
+    transition: transform .5s ;
+}
+
+.html{
+    background-image: url('html.jpg');  
+}
+.css{
+    background-image: url('css.png');
+}
+.js{
+    background-image: url('javascript.jpg');
+}
+.py{
+    background-image: url('python.png');
+}
+.java{
+    background-image: url('java.png');
+}
+.mysql{
+    background-image: url('mysql.jpg');
+}

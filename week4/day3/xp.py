@@ -1,3 +1,5 @@
+import time
+
 # Exercise 1
 
 # keys = ['Ten', 'Twenty', 'Thirty']
@@ -10,20 +12,24 @@
 # Exercise 2
 
 # family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+family = {}
+family_members = int(input('enter the number of famliy members'))
+for i in range(family_members):
+    name = input("enter your name")
+    age = int(input("Enter your age"))
+    family[name] = age
 
-# total_price  = 0
-# ages = [age for age in family.values()]
-# print(ages)
+total_price  = 0
+for age in family.values() :
+    if age<3:
+        total_price +=0
+    elif 3<= age <=12:
+        total_price+=10
+    elif age >12:
+        total_price += 15
+print(family)
 
-# for age in ages :
-#     if age<3:
-#         total_price +=0
-#     elif 3<= age <=12:
-#         total_price+=10
-#     elif age >12:
-#         total_price += 15
-
-# print("the family will pay ${}".format(total_price))
+print("the family will pay ${}".format(total_price))
 
 # Exercise 3 Zara
 
@@ -75,8 +81,8 @@
 
 # Exercise 4 : Disney Characters
 
-users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
-disney_users_A = {}
+# users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+# disney_users_A = {}
 
 # for item in enumerate(users):
 #     x,y = item
@@ -100,22 +106,45 @@ disney_users_A = {}
 #     disney_users_C[j] = i
 # print(disney_users_C)
 
-lst_w_i = [x for x in users if 'i' in x]
-disney_users_with_i={}
+# lst_w_i = [x for x in users if 'i' in x]
+# disney_users_with_i={}
 
-for item in enumerate(lst_w_i):
-    x,y = item
-    disney_users_with_i[y] = x
+# for item in enumerate(lst_w_i):
+#     x,y = item
+#     disney_users_with_i[y] = x
 
-print(disney_users_with_i)
-
-
-lst_w_m_or_p = [y for y in users if y[0]=='M' or y[0]=='P']
+# print(disney_users_with_i)
 
 
-disney_users_with_m_or_p={}
-for item in enumerate(lst_w_m_or_p):
-    x,y = item
-    disney_users_with_m_or_p[y] = x
+# lst_w_m_or_p = [y for y in users if y[0]=='M' or y[0]=='P']
 
-print(disney_users_with_m_or_p)
+
+# disney_users_with_m_or_p={}
+# for item in enumerate(lst_w_m_or_p):
+#     x,y = item
+#     disney_users_with_m_or_p[y] = x
+
+# print(disney_users_with_m_or_p)
+
+# start = time.time()
+# name = "Leonardono"
+
+# for l in range(len(name)):
+#     if l == name.find('o', name.find("o")+1):
+#           break
+#     print(name[l], end="")
+
+# end = time.time()
+# print('\n')
+# print(start - end)
+
+
+# while True:
+#     s = input("enter something")
+#     if "quit" in s:
+#         break
+#     if len(s)<3:
+#         print("too small")
+#         continue
+#     print("input is of sufficient length")
+

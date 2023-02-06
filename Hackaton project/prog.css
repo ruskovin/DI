@@ -59,5 +59,10 @@ a{
     font-weight: 1000;
     border: 10px solid black;
     border-radius: 20px;
+}
 
+.html{
+    background-image: url("html.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

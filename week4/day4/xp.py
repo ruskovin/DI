@@ -75,16 +75,14 @@ def get_random_temp(season):
 def main():
     s = input("enter a season please")
     rtemp = get_random_temp(s)
-    if rtemp < 0 :
+    if rtemp < 16 :
         print("Brr, that's freezing! Wear some extra layers today")
-    elif 0 <= rtemp < 16 :
-        print("Quite chilly! Don't forget your coat")
     elif 16 <= rtemp <= 23:
-        print("wow realy good time")
+        print(" wow it's Autumn")
     elif 24 <= rtemp < 32:
-        print('a sunny day')
+        print("It's spring season")
     elif 32 <= rtemp <=40:
-        print("what a heat")
+        print("It's summer")
     print(f"the temperature right now is {rtemp}")
 
 main()

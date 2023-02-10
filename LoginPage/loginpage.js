@@ -8,3 +8,13 @@ let loginEvent = loginButton.addEventListener('click', ()=>{
     console.log(passwordInput.value)
 })
 
+let show_pass = document.getElementById('show_pass')
+show_pass.addEventListener('click', ()=>{
+    if (show_pass.checked){
+        passwordInput.setAttribute('type', 'text')
+    }
+    else{
+        passwordInput.setAttribute('type', 'password')
+    }
+        
+})

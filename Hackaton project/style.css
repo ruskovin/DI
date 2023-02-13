@@ -1,14 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Raleway:ital,wght@1,200&family=Roboto:wght@100&family=Work+Sans:wght@300&display=swap');
+
 body{
     margin: 0%;
-    background-image: linear-gradient(to right bottom, white,darkblue);
     background-size: cover;
+    position: relative;
 }
-#barcode{
+/* #barcode{
     display:flex;
     justify-content:space-between;
     background-color:rgb(0, 0, 0);
     height: 70px;
     align-items: center;
+} */
+h1,h2,h3,h4,h5,h6,a {
+    font-family: 'Comic Neue', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#barcode{
+    display:flex;
+    justify-content:space-between;
+    background-image: linear-gradient(to left top,#24211e,#463e2b);
+    height: 70px;
+    align-items: center;
+}
+.navlist a{
+    font-size: 20px;
+    text-decoration:none;
+    color: black;;
 }
 
 li{
@@ -23,25 +46,46 @@ a{
     color: green;
 }
 
-.nav{
+.navlist{
     margin-left: 25px;
 }
-.nav img{
+.navlist img{
     height: 40px;
     width: 40px;
 }
 #about{
     text-align: center;
     width: 80%;
-    height: 500px;
-    margin-left: 100px;
+    height: 200px;
+    margin: 100px;
+    display: flex;
     /* background-color: aqua; */
+}
+
+.about-left, .about-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-right{
+    padding: 45px;
+    font-size: 22px;
+}
+
+.about-left h1, .team-left h1{
+    font-size: 75px;
+}
+
+.contacts h2{
+    margin:41px;
+    font-size: 75px;
 }
 .team{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 100px;
 }
 .card{
 margin: 30px;
@@ -182,7 +226,7 @@ textarea{
 }
 
 .left{
-    border-right: 2px solid blue;
+    border-right: 2px solid rgb(117, 117, 183);
 }
 
 .left ul{
@@ -208,3 +252,4 @@ textarea{
     width: 100%;
     height: 90vh;
 }
+

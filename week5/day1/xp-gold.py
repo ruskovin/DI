@@ -72,13 +72,21 @@ class MenuManager():
         self.menu.append({"name":name, "price":price, "spice level":spice, "gluten":gluten})
     
     def update_item(self,name,price,spice,gluten):
-        for i in range(len(self.menu)):
-            if self.menu[i]["name"] == name:
-                self.menu[i]["name"] = name
-                self.menu[i]["price"] = price
-                self.menu[i]["spice level"] = spice
-                self.menu[i]["gluten"] = gluten
+        # for i in range(len(self.menu)):
+        #     if self.menu[i]["name"] == name:
+        #         self.menu[i]["name"] = name
+        #         self.menu[i]["price"] = price
+        #         self.menu[i]["spice level"] = spice
+        #         self.menu[i]["gluten"] = gluten
+        #         return
+        for i in self.menu:
+            if i["name"] == name:
+                i["name"] = name
+                i["price"] = price
+                i["spice level"] = spice
+                i["gluten"] = gluten
                 return
+
         print("The dish is not in the menu")
     
     def remove_item(self,name):
@@ -90,9 +98,10 @@ class MenuManager():
 
 men = MenuManager()
 
-men.update_item('Soup', 40, 'D',True)
+men.update_item('Soup', 60, 'D',True)
 
-men.remove_item('Soup')
+men.add_item('food', 40, 'D',True)
+
 
 print(men.get_menu())
 

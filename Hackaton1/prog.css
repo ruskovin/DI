@@ -18,7 +18,9 @@ a{
 #barcode{
     display:flex;
     justify-content:space-between;
-    background-image: linear-gradient(to left top,#f4a261,#ffc52d);
+    /* background-image: linear-gradient(to left top,#f4a261,#ffc52d); */
+    background-image: linear-gradient(to left top,#24211e,#463e2b);
+    color:white;
     height: 70px;
     align-items: center;
 }
@@ -47,7 +49,7 @@ li{
 .navlist a{
     font-size: 20px;
     text-decoration:none;
-    color: black;;
+    color:white;
 }
 
 .navlist a:hover{

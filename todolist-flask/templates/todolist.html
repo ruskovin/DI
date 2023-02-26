@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo-list</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'todolist.css')}}">
+</head>
+<body>
+
+<form action="" method="POST">
+    <label for="add_task">Task</label>
+    <input id="add_task" name="task" type="text" placeholder="add a task">
+    <input type="submit" name="add" value="ADD">
+</form>
+
+
+<div class="tasks">
+    <ul>
+        {% for tsk in task %}
+        
+        <li> {{ tsk }}</li>
+        <a href="/delete/{{tsk.id}}">Delete</a>
+        <a href="/update/{{tsk.id}}">Update</a>
+        
+        {% endfor %}
+
+    </ul>
+</div>
+
+</body>
+</html>

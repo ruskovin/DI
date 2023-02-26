@@ -1,0 +1,51 @@
+1. Write a Python program to find a list of integers with exactly two occurrences of nineteen and at least three occurrences of five. Return True otherwise False. Go to the editor
+Input:
+[19, 19, 15, 5, 3, 5, 5, 2]
+Output:
+True
+Input:
+[19, 15, 15, 5, 3, 3, 5, 2]
+Output:
+False
+Input:
+[19, 19, 5, 5, 5, 5, 5]
+Output:
+True
+
+2. Write a Python program to find four positive even integers whose sum is a given integer. Go to the editor
+Input:
+n = 100
+Output:
+[94, 2, 2, 2]
+Input:
+n = 1000
+Output:
+[994, 2, 2, 2]
+Input:
+n = 10000
+Output:
+[9994, 2, 2, 2]
+Input:
+n = 1234567890
+Output:
+[1234567884, 2, 2, 2]
+
+3-Write a Python program that takes a list of integers and finds all pairs of integers that differ by three. Return all pairs of integers in a list. Go to the editor
+Sample Data:
+([0, 3, 4, 7, 9]) -> [[0, 3], [4, 7]]
+[0, -3, -5, -7, -8] -> [[-3, 0], [-8, -5]]
+([1, 2, 3, 4, 5]) -> [[1, 4], [2, 5]]
+([100, 102, 103, 114, 115]) -> [[100, 103]]
+
+4-. Écrivez une fonction Python pour implémenter un cache LRU. Aller à l'éditeur
+De Wikipedia -
+Le moins récemment utilisé (LRU)
+Supprime d'abord les éléments les moins récemment utilisés. Cet algorithme nécessite de garder une trace de ce qui a été utilisé quand, ce qui est coûteux si l'on veut s'assurer que l'algorithme supprime toujours l'élément le moins récemment utilisé. Les implémentations générales de cette technique nécessitent de conserver des « bits d'âge » pour les lignes de cache et de suivre la ligne de cache « la moins récemment utilisée » sur la base des bits d'âge. Dans une telle implémentation, chaque fois qu'une ligne de cache est utilisée, l'âge de toutes les autres lignes de cache change. LRU est en fait une famille d'algorithmes de mise en cache avec des membres tels que 2Q de Theodore Johnson et Dennis Shasha, et LRU/K de Pat O'Neil, Betty O'Neil et Gerhard Weikum.
+
+version anglaise
+Write a Python a function to implement a LRU cache. Go to the editor
+From Wikipedia -
+Least recently used (LRU)
+Discards the least recently used items first. This algorithm requires keeping track of what was used when, which is expensive if one wants to make sure the algorithm always discards the least recently used item. General implementations of this technique require keeping "age bits" for cache-lines and track the "Least Recently Used" cache-line based on age-bits. In such an implementation, every time a cache-line is used, the age of all other cache-lines changes. LRU is actually a family of caching algorithms with members including 2Q by Theodore Johnson and Dennis Shasha, and LRU/K by Pat O'Neil, Betty O'Neil and Gerhard Weikum.
+
+5- Write a Python program to find all the pairs in a list whose sum is equal to a given value.

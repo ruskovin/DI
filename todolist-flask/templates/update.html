@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo-list</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'todolist.css')}}">
+</head>
+<body>
+
+<div class = "form">
+<form action="/update/{{task.id}}" method="POST">
+    <label for="add_task">Task</label>
+    <input id="add_task" name="update" type="text" value="{{task.task}}">
+    <input type="submit" name="add" value="ADD">
+</form>
+</div>
+
+</body>
+</html>

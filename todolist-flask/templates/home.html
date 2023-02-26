@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style >
+        body {
+            background-image: linear-gradient(to bottom left,olivedrab,lime);
+            background-size:cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to my TODO LIST APP</h1>
+
+    <a style:"text-align:center; font-family:sans-serif; font-size: 35px;" href="{{ url_for('todo_list') }}">Todolist app</a>
+
+</body>
+</html>

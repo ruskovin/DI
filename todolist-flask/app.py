@@ -2,14 +2,12 @@ from flask import Flask,request,url_for,redirect, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:tryhackme8@localhost:5432/todolist"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 class Tasks(db.Model):
-    
     id = db.Column(db.Integer, primary_key = True)
     task = db.Column(db.String)
     def __repr__(self):
@@ -18,9 +16,8 @@ class Tasks(db.Model):
 with app.app_context():
     db.create_all()
 
-
 @app.route('/')
-def hello_world():  # put application's code here
+def hello_world():  # put application's code here7
     return render_template('home.html')
 
 
@@ -28,13 +25,13 @@ def hello_world():  # put application's code here
 def todo_list():
     if request.method == 'POST':
         tk = request.form["task"]
+        if tk == None:
+            return
         new_task = Tasks(task = tk)
         db.session.add(new_task)
         db.session.commit()
-        tasks = Tasks.query.all()
-        return render_template('todolist.html', task = tasks)
+        return render_template('todolist.html', task = Tasks.query.all())
     return render_template('todolist.html', task = Tasks.query.all())
-    
 
 @app.route('/delete/<int:id>')
 def delete(id):
@@ -50,7 +47,7 @@ def update(id):
     if request.method == 'POST':
         task.task = request.form['update']
         db.session.commit()
-        return redirect('/'+'todolist')
+        return redirect('/todolist')
     else:
         return render_template('update.html', task = task)
 

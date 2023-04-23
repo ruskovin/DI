@@ -35,7 +35,7 @@ header {
     height: 100vh;
     width: 100%;
     /* background-image:  linear-gradient(to top, rgba(255, 255, 255, 0.664), rgba(255, 255, 255, 0.568)),url(/PortfolioProject/portfolio_setup/images/headerback.jpg); */
-    background-image: url(/PortfolioProject/portfolio_setup/images/headerback.jpg);
+    background-image: url(/portfolio_setup/images/headerback.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

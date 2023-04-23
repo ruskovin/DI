@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo-list</title>
-    <link rel = "stylesheet" href = "{{url_for('static', filename = 'todolist.css')}}">
+    <link rel = "stylesheet" href="{{url_for('static', filename = 'todolist.css')}}">
 </head>
 <body>
 
@@ -11,7 +11,7 @@
 <form action="/update/{{task.id}}" method="POST">
     <label for="add_task">Task</label>
     <input id="add_task" name="update" type="text" value="{{task.task}}">
-    <input type="submit" name="add" value="ADD">
+    <input type="submit" name="add" value="UPDATE">
 </form>
 </div>
 

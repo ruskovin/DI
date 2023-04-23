@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="loginpage.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'loginpage.css' %}">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="container left">
-            <section class="lft">
+        <div class="container right">
+            <section class="">
                 <h1>Log In</h1>
-                <form action="#" class="form" method="POST">
-                    <input type="email" placeholder="Email" class="email" id="mail" required>
-                    <input type="password" placeholder="Password" id="pwd" class="password">
+                <form action="#" class="form" method="POST"> {% csrf_token %}
+                    <input type="text" placeholder="username" class="email" id="username" name= "username">
+                    <input type="password" placeholder="Password" name="password" id="pwd" class="password">
                     <div class="remember-forget">
                         <input type="checkbox" class="checkbox" id="remember">
                         <label for="remember">Remember me</label>
@@ -27,7 +28,8 @@
                     </div>
                     <input type="submit" value="LOG IN" id="login-btn" class="login-button">
                 </form>
-                <form action=""></form>
+                
+                <p>{{user}},{{password}} </p>
             </section>
             <div class="social-media">
                 <p>Or connect with</p>
@@ -38,20 +40,20 @@
                     <a href="#"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
                 </ul>
             </div>
-            <footer class="footer-left">
+            <footer class="footer-right">
                 <h5> © 2023</h5>
             </footer>
         </div>
-        <div class="container right">
-            <section class="rgt">
+        <div class="container left">
+            <section class="lft">
                 <i class="fa-solid fa-user-plus"></i>
                 <h1>Hello, Friend!</h1>
-                <p>Enter your personal details and start journey with us</p>
+                <p>Enter your personal details and start a journey with us</p>
                 <button>REGISTER <span id="register-arrow"><i class="fa-thin fa-circle-arrow-right"></i></span></button>
             </section>
         </div>
     </div>
-    <script src="loginpage.js"></script>
+    <script src="{% static 'loginpage.js' %}"></script>
 </body>
 
 </html>

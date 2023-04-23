@@ -8,9 +8,9 @@
 <body>
 
 <form action="" method="POST">
-    <label for="add_task">Task</label>
-    <input id="add_task" name="task" type="text" placeholder="add a task">
-    <input type="submit" name="add" value="ADD">
+    <label for="add_task">Add a task</label>
+    <input id="add_task" name="task" type="text" >
+    <input id="sb-btn" type="submit" name="add" value="ADD">
 </form>
 
 
@@ -23,7 +23,6 @@
         <a href="/update/{{tsk.id}}">Update</a>
         
         {% endfor %}
-
     </ul>
 </div>
 
